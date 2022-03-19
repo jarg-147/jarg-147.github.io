@@ -15,29 +15,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="icon" type="image/x-icon"
           href="https://media-exp1.licdn.com/dms/image/C5603AQEkcPJ00h-pgw/profile-displayphoto-shrink_200_200/0/1647080541802?e=1652918400&v=beta&t=SFhzvgUxPnghyhh3t27CF-FowqFgmZI-esNxb0i5zJM">
+    <!--[if lte IE 8]>
+    <script src="assets/js/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css"/>
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css"/>
     </noscript>
 </head>
 <body class="is-loading">
+
 <!-- Wrapper -->
 <div id="wrapper">
+
     <!-- Main -->
     <div id="main">
         <div class="front">
-
             <header>
                 <span class="avatar"><img
                         src="https://media-exp1.licdn.com/dms/image/C5603AQEkcPJ00h-pgw/profile-displayphoto-shrink_200_200/0/1647080541802?e=1652918400&v=beta&t=SFhzvgUxPnghyhh3t27CF-FowqFgmZI-esNxb0i5zJM"
-                        width="200" height="200"/></span>
+                        alt="Javier RG" width="200"
+                        height="200"/></span>
                 <h1>Javier Romero Gil</h1>
                 <p>Android Kotlin Developer</p>
             </header>
 
             <nav>
-                <a href="https://play.google.com/store/apps/dev?id=5750565710425983947">My Apps</a>
+                <a href="#projects" class="flipper">Projects</a>
                 <a href="#aboutme" class="flipper">About Me</a>
+                <!-- <a href="#contact" class="flipper">Contact Me</a> -->
             </nav>
 
             <footer>
@@ -64,6 +73,64 @@
                     <a href="#" class="button flipper">Back</a>
                 </div>
             </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="card_wrapper">
+                    <ul class="project_list">
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=com.bitbiird.weedog" target="_blank">
+                                <img src="https://play-lh.googleusercontent.com/X9UptzvOsK9j5A7EgXRvzZDrMvN_ZZIbpACJeJ9SF2l_X7Vf9wJAdpWjU1lkO4p1xdVv=s180-rw"
+                                     alt="WeeDog" width="50" height="50"/>
+                                WeeDog
+                            </a>
+                            <ul>
+                                <li>It shows the dog beaches of Spain.
+                                    Made in Kotlin, with MVVM architecture, using Room and Firebase.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=com.bitbiird.horoscopum"
+                               target="_blank">
+                                <img src="https://play-lh.googleusercontent.com/lzbFllsGM4AQPTIc_5pf2S0gjiEKxwVOT8GRD-ycwKPTaefCJfuqPgln4hUvOiOfbA=s180-rw" alt="Horoscopum" width="50" height="50"/>
+                                Horoscopum
+                            </a>
+                            <ul>
+                                <li>Shows the daily horoscope. Made in Kotlin, with MVVM and Clean architecture.
+                                    Using dependency injection (Hilt) and Firebase.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="button flipper">Back</a>
+            </section>
+
+            <!-- <section id="contact" style="display:none;">
+                <h2>Get In Touch</h2>
+                <form method="post" action="mail.php" id="contactform">
+                    <div class="field">
+                        <input type="text" name="name" id="name" placeholder="Name" required="required"/>
+                    </div>
+                    <div class="field">
+                        <input type="email" name="email" id="email" placeholder="Email" required="required"/>
+                    </div>
+                    <div class="field">
+                        <textarea name="message" id="message" placeholder="Message" rows="3"
+                                  required="required"></textarea>
+                    </div>
+                    <div class="field">
+                        <div class="g-recaptcha" data-theme="light"
+                             data-sitekey="6LdLgAYTAAAAAIfNMlaNEc3K39HSOn6tEA41Ngf-"></div>
+                    </div>
+                    <ul class="actions">
+                        <li><a href="#" class="button flipper">Back</a></li>
+                        <li>
+                            <button type="submit" id="contact_submit">Send</button>
+                        </li>
+                    </ul>
+                </form>
+            </section> -->
         </div>
     </div>
 
@@ -76,7 +143,11 @@
 
 </div>
 
+<!-- Scripts -->
+<!--[if lte IE 8]>
+<script src="assets/js/respond.min.js"></script><![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="assets/js/main.js"></script>
 
 </body>
