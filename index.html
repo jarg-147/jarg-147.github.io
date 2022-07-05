@@ -15,18 +15,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="icon" type="image/x-icon"
           href="https://media-exp1.licdn.com/dms/image/C5603AQEkcPJ00h-pgw/profile-displayphoto-shrink_200_200/0/1647080541802?e=1652918400&v=beta&t=SFhzvgUxPnghyhh3t27CF-FowqFgmZI-esNxb0i5zJM">
+    <!--[if lte IE 8]>
+    <script src="assets/js/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css"/>
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css"/>
     </noscript>
 </head>
 <body class="is-loading">
+
 <!-- Wrapper -->
 <div id="wrapper">
+
     <!-- Main -->
     <div id="main">
         <div class="front">
-
             <header>
                 <span class="avatar"><img
                         src="https://avatars.githubusercontent.com/u/101630863?v=4"
@@ -36,8 +43,9 @@
             </header>
 
             <nav>
-                <a href="https://play.google.com/store/apps/dev?id=5750565710425983947">My Apps</a>
+                <a href="#projects" class="flipper">My Projects</a>
                 <a href="#aboutme" class="flipper">About Me</a>
+                <!-- <a href="#contact" class="flipper">Contact Me</a> -->
             </nav>
 
             <footer>
@@ -53,7 +61,7 @@
         <div class="back">
             <section id="aboutme">
                 <header>
-                    <span class="avatar"><img src="https://avatars.githubusercontent.com/u/101630863?v=4" width="122"
+                    <span class="avatar"><img src="https://media-exp1.licdn.com/dms/image/C5603AQEkcPJ00h-pgw/profile-displayphoto-shrink_200_200/0/1647080541802?e=1652918400&v=beta&t=SFhzvgUxPnghyhh3t27CF-FowqFgmZI-esNxb0i5zJM" width="122"
                                               height="122"/></span>
                 </header>
                 <div class="card_wrapper">
@@ -63,6 +71,38 @@
                         learning new things.</p>
                     <a href="#" class="button flipper">Back</a>
                 </div>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="card_wrapper">
+                    <ul class="project_list">
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=com.bitbiird.weedog" target="_blank">
+                                <img src="https://play-lh.googleusercontent.com/X9UptzvOsK9j5A7EgXRvzZDrMvN_ZZIbpACJeJ9SF2l_X7Vf9wJAdpWjU1lkO4p1xdVv=s180-rw"
+                                     alt="WeeDog" width="50" height="50"/>
+                                WeeDog
+                            </a>
+                            <ul>
+                                <li>It shows the dog beaches of Spain.
+                                    Made in Kotlin, with MVVM architecture, using Room and Firebase.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=com.bitbiird.horoscopum"
+                               target="_blank">
+                                <img src="https://play-lh.googleusercontent.com/lzbFllsGM4AQPTIc_5pf2S0gjiEKxwVOT8GRD-ycwKPTaefCJfuqPgln4hUvOiOfbA=s180-rw" alt="Horoscopum" width="50" height="50"/>
+                                Horoscopum
+                            </a>
+                            <ul>
+                                <li>Shows the daily horoscope. Made in Kotlin, with MVVM and Clean architecture.
+                                    Using dependency injection (Hilt) and Firebase.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="button flipper">Back</a>
             </section>
         </div>
     </div>
@@ -76,6 +116,9 @@
 
 </div>
 
+<!-- Scripts -->
+<!--[if lte IE 8]>
+<script src="assets/js/respond.min.js"></script><![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="assets/js/main.js"></script>
 
